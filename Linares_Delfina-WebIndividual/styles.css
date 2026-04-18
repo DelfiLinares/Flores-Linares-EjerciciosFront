@@ -1,0 +1,527 @@
+:root {
+    --rojo: rgb(180, 0, 0);
+    --rojo-oscuro: rgb(112, 0, 0);
+    --negro: #0a0a0a;
+    --gris-oscuro: rgb(18, 18, 18);
+    --gris-card: rgb(22, 22, 22);
+    --gris-borde: rgb(45, 45, 45);
+    --gris-texto: rgb(170, 170, 170);
+    --blanco: #ffffff;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: 'IBM Plex Sans Condensed', 'Inter', sans-serif;
+}
+
+.headerContenedor {
+    padding: 10px 24px;
+    width: 100%;
+    background-color: #000 !important;
+    border-bottom: 2px solid var(--rojo-oscuro);
+}
+
+.logoImagen {
+    height: 42px;
+    width: auto;
+    padding: 0;
+    display: block;
+}
+
+.divImagen {
+    display: flex;
+    align-items: center;
+}
+
+.listaItemsHeader {
+    gap: 4px;
+    margin-left: auto;
+}
+
+.listaItemsHeader .nav-link {
+    color: rgba(255,255,255,0.85) !important;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.05rem;
+    letter-spacing: 1.5px;
+    padding: 6px 16px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.listaItemsHeader .nav-link:hover,
+.listaItemsHeader .nav-link.active {
+    color: #fff !important;
+    border-color: var(--rojo);
+    background-color: var(--rojo-oscuro);
+}
+
+.linkNav {
+    width: auto;
+    padding: 0;
+}
+
+header {
+    background-color: #000;
+    padding: 12px 28px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    border-bottom: 2px solid var(--rojo-oscuro);
+    width: 100%;
+}
+
+header img {
+    height: 40px;
+    width: auto;
+}
+
+nav {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+nav a {
+    color: rgba(255,255,255,0.85);
+    text-decoration: none;
+    padding: 7px 16px;
+    border: 1px solid rgba(255,255,255,0.25);
+    border-radius: 4px;
+    font-size: 13px;
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 1.5px;
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background-color: var(--rojo-oscuro);
+    border-color: var(--rojo-oscuro);
+    color: #fff;
+}
+
+nav a.activo {
+    background-color: var(--rojo-oscuro);
+    border-color: var(--rojo);
+    color: #fff;
+}
+
+main {
+    background-color: var(--negro);
+    color: var(--blanco);
+    font-family: 'IBM Plex Sans Condensed', 'Inter', sans-serif;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+}
+
+#carouselExampleFade {
+    width: 100%;
+    max-height: 480px;
+    overflow: hidden;
+}
+
+#carouselExampleFade .carousel-item img {
+    width: 100%;
+    max-height: 480px;
+    object-fit: cover;
+    object-position: center top;
+    filter: brightness(0.7);
+}
+
+.botonesCarousel {
+    opacity: 0.8;
+}
+
+.contTyN {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 24px;
+    margin: 0;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.titulo {
+    font-family: "Bebas Neue", sans-serif;
+    text-align: center;
+    color: var(--rojo);
+    margin-top: 20px;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+}
+
+.contenedor {
+    background-color: rgb(22, 22, 22) !important;
+    border-radius: 10px;
+    padding: 28px 24px;
+    border: 1px solid var(--gris-borde);
+    transition: background-color 0.2s ease;
+}
+
+.contenedor:hover {
+    background-color: rgb(28, 28, 28) !important;
+}
+
+.contenedor .form-control {
+    background-color: rgb(35, 35, 35);
+    border: 1px solid var(--gris-borde);
+    color: white;
+    border-radius: 6px;
+}
+
+.contenedor .form-control:focus {
+    background-color: rgb(40, 40, 40);
+    border-color: var(--rojo);
+    color: white;
+    box-shadow: 0 0 0 2px rgba(180,0,0,0.25);
+}
+
+.contenedor .form-control::placeholder {
+    color: rgb(110, 110, 110);
+}
+
+.rowNoticias {
+    width: 100%;
+    justify-content: center;
+    align-items: stretch;
+    margin: 0 auto;
+    padding: 0 8px;
+}
+
+.noticias {
+    padding: 8px;
+}
+
+.card {
+    background-color: transparent !important;
+    border: none !important;
+}
+
+.tarjetaNoticia {
+    background-color: var(--gris-card) !important;
+    border: 1px solid var(--gris-borde) !important;
+    border-radius: 10px;
+    padding: 20px;
+    height: 100%;
+    transition: border-color 0.2s ease;
+}
+
+.tarjetaNoticia:hover {
+    border-color: var(--rojo) !important;
+}
+
+.tarjetaNoticia h5 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.4rem;
+    letter-spacing: 1px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.tarjetaNoticia p {
+    font-size: 0.95rem;
+    color: var(--gris-texto);
+    line-height: 1.5;
+}
+
+.contenedorForm {
+    width: 100%;
+    max-width: 100%;
+    padding: 40px 24px;
+    background-color: rgb(14, 14, 14);
+    border-top: 1px solid var(--gris-borde);
+}
+
+.contenedorForm h1 {
+    color: var(--blanco);
+    margin-bottom: 4px;
+}
+
+.contenedorForm h2 {
+    font-size: 1rem;
+    color: var(--gris-texto);
+    font-family: 'IBM Plex Sans Condensed', sans-serif;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.divsForm {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.inputsNombre {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid var(--gris-borde);
+    color: white;
+    border-radius: 6px;
+    padding: 10px 12px;
+}
+
+.inputsNombre:focus {
+    background-color: rgb(35, 35, 35);
+    border-color: var(--rojo);
+    color: white;
+    box-shadow: 0 0 0 2px rgba(180,0,0,0.2);
+}
+
+.inputsNombre::placeholder {
+    color: rgb(100, 100, 100);
+    font-size: 0.9rem;
+}
+
+.colNombre {
+    padding-right: 6px;
+    padding-left: 6px;
+}
+
+.form-floating label {
+    color: rgb(120, 120, 120);
+}
+
+.form-floating .form-control {
+    background-color: rgb(30, 30, 30);
+    border: 1px solid var(--gris-borde);
+    color: white;
+    border-radius: 6px;
+}
+
+.form-floating .form-control:focus {
+    background-color: rgb(35, 35, 35);
+    border-color: var(--rojo);
+    box-shadow: 0 0 0 2px rgba(180,0,0,0.2);
+    color: white;
+}
+
+.boton {
+    background-color: var(--rojo-oscuro) !important;
+    border-color: var(--rojo-oscuro) !important;
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.1rem;
+    letter-spacing: 1.5px;
+    padding: 10px 32px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease, transform 0.15s ease;
+    width: auto;
+}
+
+.boton:hover {
+    background-color: var(--rojo) !important;
+    border-color: var(--rojo) !important;
+    transform: translateY(-1px);
+}
+
+footer {
+    background-color: #000;
+    padding: 20px 24px;
+    color: var(--gris-texto);
+    text-align: center;
+    font-size: 14px;
+    line-height: 2;
+    border-top: 1px solid var(--gris-borde);
+    width: 100%;
+}
+
+footer strong {
+    color: white;
+}
+
+footer a {
+    color: var(--rojo);
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.contenedorInfoFooter {
+    display: block;
+    width: 100%;
+}
+
+.contenedorIconos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 10px;
+}
+
+.iconosFooter {
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+    transition: opacity 0.2s ease;
+    filter: invert(1);
+}
+
+.iconosFooter:hover {
+    opacity: 1;
+}
+
+.main-inner {
+    max-width: 920px;
+    margin: 0 auto;
+    padding: 36px 24px;
+}
+
+main section {
+    margin-bottom: 48px;
+}
+
+main section h2 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    margin-bottom: 16px;
+    color: var(--rojo);
+    border-bottom: 2px solid var(--rojo-oscuro);
+    padding-bottom: 6px;
+}
+
+main section p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: var(--gris-texto);
+    margin-bottom: 12px;
+}
+
+.miembros {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+.card-miembro {
+    background-color: var(--gris-card);
+    border: 1px solid var(--gris-borde);
+    border-radius: 10px;
+    padding: 16px;
+    width: 100%;
+    text-align: center;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.card-miembro:hover {
+    border-color: var(--rojo);
+    transform: translateY(-3px);
+}
+
+.card-miembro img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 7px;
+    margin-bottom: 12px;
+    background-color: rgb(40, 40, 40);
+}
+
+.card-miembro h3 {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1.25rem;
+    letter-spacing: 1px;
+    margin-bottom: 4px;
+    color: white;
+}
+
+.card-miembro p {
+    font-size: 13px !important;
+    color: var(--gris-texto) !important;
+    margin: 2px 0 !important;
+    line-height: 1.5 !important;
+}
+
+.lista-canciones {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.lista-canciones li a {
+    display: block;
+    background-color: var(--gris-card);
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    padding: 14px 18px;
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 15px;
+    transition: border-color 0.2s ease, color 0.2s ease;
+}
+
+.lista-canciones li a:hover {
+    border-color: #1DB954;
+    color: #1DB954;
+}
+
+.lista-conciertos {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.lista-conciertos li {
+    background-color: var(--gris-card);
+    border: 1px solid var(--gris-borde);
+    border-left: 4px solid var(--rojo);
+    border-radius: 8px;
+    padding: 16px 18px;
+    font-size: 15px;
+    color: var(--gris-texto);
+    transition: border-color 0.2s ease;
+}
+
+.lista-conciertos li:hover {
+    border-color: var(--rojo);
+    border-left-color: var(--rojo);
+}
+
+.lista-conciertos li span {
+    font-weight: 700;
+    color: var(--rojo);
+}
+
+@media (min-width: 600px) {
+    .card-miembro {
+        width: calc(50% - 8px);
+    }
+}
+
+@media (min-width: 900px) {
+    .card-miembro {
+        width: calc(25% - 12px);
+    }
+}
+
+@media (max-width: 670px) {
+    .contenedorIconos .iconosFooter {
+        width: 28px;
+        height: 28px;
+    }
+
+    .logoImagen {
+        height: 34px;
+    }
+
+    header img {
+        height: 32px;
+    }
+}
