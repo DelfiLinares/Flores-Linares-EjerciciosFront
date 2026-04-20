@@ -1,0 +1,334 @@
+ <!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Episodios — Nirvanna The Band The Show</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(135deg, #232526 0%, #414345 100%);
+        color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: #181818;
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      .nav-btn {
+        color: #fff;
+        background: #333;
+        padding: 0.5rem 1.2rem;
+        margin: 0 0.3rem;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+      }
+
+      main h2 {
+        color: #ffb347;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .temporada-subtitulo {
+        color: #aaa;
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .episodios-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.2rem;
+        margin-bottom: 3rem;
+      }
+
+      .ep-card {
+        background: #232526;
+        border-radius: 14px;
+        padding: 1.2rem;
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+      }
+
+      .ep-numero {
+        background: #ffb347;
+        color: #232526;
+        font-weight: bold;
+        font-size: 0.85rem;
+        border-radius: 8px;
+        padding: 0.3rem 0.6rem;
+        min-width: 2.5rem;
+        text-align: center;
+        flex-shrink: 0;
+        margin-top: 2px;
+      }
+
+      .ep-info h3 {
+        color: #ffb347;
+        font-size: 1rem;
+        margin: 0 0 0.4rem 0;
+      }
+
+      .ep-info p {
+        color: #ccc;
+        font-size: 0.88rem;
+        margin: 0;
+        line-height: 1.5;
+      }
+
+      .personajes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .personaje-card {
+        background: #232526;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .personaje-img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        border-bottom: 3px solid #ffb347;
+      }
+
+      .personaje-info {
+        padding: 1.25rem;
+      }
+
+      .personaje-info h3 {
+        color: #f0f0f0;
+        margin-bottom: 0.25rem;
+      }
+
+      .personaje-rol {
+        display: inline-block;
+        background: #2a2a2a;
+        color: #ffb347;
+        font-size: 0.8rem;
+        padding: 2px 10px;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
+        border: 1px solid #444;
+      }
+
+      .personaje-info p {
+        color: #bbb;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .personaje-frase {
+        color: #ffb347;
+      }
+
+      footer {
+        background: #181818;
+        color: #ffe29f;
+        text-align: center;
+        padding: 1.5rem 0 1rem 0;
+        margin-top: 2rem;
+        font-size: 1rem;
+      }
+
+      .footer-nombre {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #ffb347;
+      }
+
+      @media (max-width: 600px) {
+        main {
+          padding: 0.5rem;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <img src="thelogo.png" alt="Nirvanna The Band" style="max-height: 320px;" />
+      </div>
+      <nav>
+        <a href="index.html" class="nav-btn">Inicio</a>
+        <a href="episodios.html" class="nav-btn activo">Episodios</a>
+        <a href="protagonistas.html" class="nav-btn">Protagonistas</a>
+      </nav>
+    </header>
+ 
+ 
+ <section>
+        <h2>Temporada 1 — 2017</h2>
+        <p class="temporada-subtitulo">8 episodios</p>
+        <div class="episodios-grid">
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E1</span>
+            <div class="ep-info">
+              <h3>The Banner</h3>
+              <p>En un intento por dar a conocer a la banda, Matt y Jay desplegaron una enorme pancarta frente al Rivoli. Resultó ser más reveladora de lo planeado.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E2</span>
+            <div class="ep-info">
+              <h3>The Booking</h3>
+              <p>Matt y Jay crean un plan para anotarse en el periódico de Toronto y reservar su propio trabajo.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E3</span>
+            <div class="ep-info">
+              <h3>The Bean</h3>
+              <p>Matt y Jay irrumpen en la casa de Vince Valence y se esconden en el sótano cuando este vuelve antes de tiempo.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E4</span>
+            <div class="ep-info">
+              <h3>The Blindside</h3>
+              <p> Matt y Jay asisten a la Premiere de "Star Wars: El despertar de la Fuerza", pero Matt se queda ciego justo en el día del estreno.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E5</span>
+            <div class="ep-info">
+              <h3>The Big Time</h3>
+              <p>Matt convence a Jay de hacer una película para conseguir el show. La cuela en el Festival de Sundance y se convierte en una pseudocelebridad que se descontrola.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E6</span>
+            <div class="ep-info">
+              <h3>The Boy</h3>
+              <p>Matt y Jay se hacen amigos de un chico enfermo para usar su deseo final: que Nirvanna toque en el Rivoli. Terminan mostrándole el mejor momento de su vida.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E7</span>
+            <div class="ep-info">
+              <h3>The Buffet</h3>
+              <p>Jay le escribe una carta a Matt diciéndole que se va de la banda. En un buffet chino all-you-can-eat, intenta reunir el valor para leérsela.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T1 E8</span>
+            <div class="ep-info">
+              <h3>The Bank</h3>
+              <p>Matt y Jay se ven envueltos en un robo a un banco. Matt está convencido de que esto les va a abrir las puertas del Rivoli.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section>
+        <h2>Temporada 2 — 2018</h2>
+        <p class="temporada-subtitulo">8 episodios</p>
+        <div class="episodios-grid">
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E1</span>
+            <div class="ep-info">
+              <h3>The Burger</h3>
+              <p>Matt y Jay planean hacerse virales en un partido de hockey fingiendo ser superfans y besándose en cámara para que la reacción del público los lleve a las noticias.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E2</span>
+            <div class="ep-info">
+              <h3>The Boost</h3>
+              <p>Matt inscribe a Jay en un torneo de speedrun del juego de James Bond. A medida que la competencia se intensifica, Matt le da a Jay una ventaja ilegal en secreto.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E3</span>
+            <div class="ep-info">
+              <h3>The Buddy</h3>
+              <p>Jay asiste a una fiesta de la industria musical, dejando a Matt solo en casa. Mientras está allí, Jay hace un nuevo (pero familiar) amigo, y ellos elaboran un plan para reservar un espectáculo en el Rivoli.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E4</span>
+            <div class="ep-info">
+              <h3>The Book</h3>
+              <p>En la noche de Halloween, Jay encuentra un libro de música maldito escondido en la casa. En esta búsqueda, los chicos trabajan juntos para restaurar el orden.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E5</span>
+            <div class="ep-info">
+              <h3>The B-Day</h3>
+              <p>Matt olvida el cumpleaños de Jay e intenta compensarlo. Jay se pierde en el festival 4/20 de Toronto.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E6</span>
+            <div class="ep-info">
+              <h3>The Forbidden</h3>
+              <p>Matt y Jay se hacen pasar por hackers para atacar el sistema del Rivoli y entrar en la lista de bandas. Pero Matt tiene motivaciones ocultas.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E7</span>
+            <div class="ep-info">
+              <h3>The Banned List</h3>
+              <p>Matt y Jay se infiltran en los túneles subterráneos de Toronto esperando entrar al Rivoli por abajo.</p>
+            </div>
+          </div>
+
+          <div class="ep-card">
+            <span class="ep-numero">T2 E8</span>
+            <div class="ep-info">
+              <h3>The Banned List 2</h3>
+              <p>El plan de Matt y Jay para entrar en la lista de bandas del Rivoli da un giro inesperado cuando quedan atrapados en el tejado del local. Atrapados bajo un calor sofocante, la tensión aumenta y salen a la luz secretos.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+    <footer>
+      <p class="footer-nombre">Página Web Individual</p>
+      <p>Tobías Flores</p>
+      <p>Fan site no oficial de <em>Nirvanna The Band The Show</em> · Todos los derechos pertenecen a Zapruder Films, Matt Johnson y Jay McCarrol.</p>
+    </footer>
+
+  </body>
+</html>

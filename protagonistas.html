@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="es">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Protagonistas — Nirvanna The Band The Show</title>
+    <style>
+      body {
+        font-family: 'Segoe UI', Arial, sans-serif;
+        background: linear-gradient(135deg, #232526 0%, #414345 100%);
+        color: #f2f2f2;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background: #181818;
+        padding: 2rem 0 1rem 0;
+        text-align: center;
+      }
+
+      nav {
+        margin-top: 1rem;
+      }
+
+      .nav-btn {
+        color: #fff;
+        background: #333;
+        padding: 0.5rem 1.2rem;
+        margin: 0 0.3rem;
+        border-radius: 20px;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      main {
+        max-width: 1000px;
+        margin: 2rem auto;
+        padding: 0 1.5rem;
+      }
+
+      main h2 {
+        color: #ffb347;
+        font-size: 1.6rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .personajes-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1.5rem;
+      }
+
+      .personaje-card {
+        background: #232526;
+        border-radius: 14px;
+        overflow: hidden;
+      }
+
+      .personaje-img {
+        width: 100%;
+        height: 240px;
+        object-fit: cover;
+        border-bottom: 3px solid #ffb347;
+      }
+
+      .personaje-info {
+        padding: 1.25rem;
+      }
+
+      .personaje-info h3 {
+        color: #f0f0f0;
+        margin-bottom: 0.25rem;
+      }
+
+      .personaje-rol {
+        display: inline-block;
+        background: #2a2a2a;
+        color: #ffb347;
+        font-size: 0.8rem;
+        padding: 2px 10px;
+        border-radius: 4px;
+        margin-bottom: 0.75rem;
+        border: 1px solid #444;
+      }
+
+      .personaje-info p {
+        color: #bbb;
+        font-size: 0.9rem;
+        margin-bottom: 0.5rem;
+      }
+
+      .personaje-frase {
+        font-style: italic;
+        color: #ffb347;
+      }
+
+      .galeria {
+        margin: 2.5rem 0;
+      }
+
+      .galeria-carrusel {
+        display: flex;
+        gap: 1.2rem;
+        padding-bottom: 1rem;
+        justify-content: center;
+      }
+
+      .galeria-carrusel img {
+        width: 400px;
+        height: 400px;
+        object-fit: cover;
+        border-radius: 14px;
+      }
+
+      footer {
+        background: #181818;
+        color: #ffe29f;
+        text-align: center;
+        padding: 1.5rem 0 1rem 0;
+        margin-top: 2rem;
+        font-size: 1rem;
+      }
+
+      .footer-nombre {
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #ffb347;
+      }
+
+       @media (max-width: 768px) {
+        .galeria-carrusel {
+          flex-wrap: wrap;
+        }
+
+        .galeria-carrusel img {
+          width: 150px;
+          height: 150px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <header>
+      <div class="logo">
+        <img src="thelogo.png" alt="Nirvanna The Band" style="max-height: 320px;" />
+      </div>
+      <nav>
+        <a href="index.html" class="nav-btn">Inicio</a>
+        <a href="episodios.html" class="nav-btn">Episodios</a>
+        <a href="protagonistas.html" class="nav-btn activo">Protagonistas</a>
+      </nav>
+    </header>
+
+    <main>
+
+      <section>
+        <h2>Protagonistas</h2>
+        <div class="personajes-grid">
+
+          <div class="personaje-card">
+            <img src="mattjohnson.jpg" alt="Matt Johnson" class="personaje-img" />
+            <div class="personaje-info">
+              <h3>Matt Johnson</h3>
+              <p>Matt Johnson es un director de cine, escritor, productor y actor canadiense. Primero atrajo elogios por sus largometrajes independientes de bajo presupuesto, incluyendo The Dirties (2013) y Operation Avalanche (2016). Johnson alcanzó el reconocimiento y el éxito comercial con su tercer largometraje, BlackBerry (2023), que documentó el auge y la caída del teléfono BlackBerry.</p>
+              <p class="personaje-frase">"I've been thinking about this for a long time and I really think this is the one."</p>
+            </div>
+          </div>
+
+          <div class="personaje-card">
+            <img src="jaymccarrol.webp" alt="Jay McCarrol" class="personaje-img" />
+            <div class="personaje-info">
+              <h3>Jay McCarrol</h3>
+              <p>Jay McCarrol es un músico, compositor, escritor, actor, animador y comediante canadiense. Su trabajo como compositor se extiende a The Kid Detective de Evan Morgan, protagonizada por Adam Brody y Hell of a Summer. Hasta 2026, había compuesto la música de todas las películas de Johnson.</p>
+              <p class="personaje-frase">"Can we just talk about this for a second?"</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="galeria">
+        <h2>Proyectos con Matt Johnson</h2>
+        <div class="galeria-carrusel">
+          <img src="thedirties.jpg" alt="dirties" />
+          <img src="diamond.jpg" alt="foto" />
+          <img src="operation.jpg" alt="peli" />
+          <img src="blackberry.webp" alt="pelidula" />
+        </div>
+      </section>
+
+      <section class="galeria">
+        <h2>Proyectos con Jay McCarrol</h2>
+        <div class="galeria-carrusel">
+          <img src="pop.jpg" alt="aaaaa" />
+          <img src="bird.jpg" alt="bbbbb" />
+          <img src="detective.webp" alt="cccc" />
+          <img src="hell.webp" alt="dddd" />
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <p class="footer-nombre">Página Web Individual</p>
+      <p>Tobías Flores</p>
+      <p>Fan site no oficial de <em>Nirvanna The Band The Show</em> · Todos los derechos pertenecen a Zapruder Films, Matt Johnson y Jay McCarrol.</p>
+    </footer>
+
+  </body>
+</html>
