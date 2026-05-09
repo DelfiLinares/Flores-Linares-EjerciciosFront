@@ -1,0 +1,457 @@
+/* =====================
+   RESET Y BASE
+   ===================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  background-color: #111;
+  color: #f0f0f0;
+  line-height: 1.7;
+}
+
+img {
+  max-width: 100%;
+  border-radius: 8px;
+  display: block;
+}
+
+a {
+  color: #e8c44a;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* =====================
+   HEADER Y NAV
+   ===================== */
+header {
+  background-color: #1a1a1a;
+  border-bottom: 3px solid #e8c44a;
+  padding: 1.2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo h1 {
+  font-size: 2rem;
+  color: #e8c44a;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.logo-sub {
+  color: #999;
+  font-size: 0.9rem;
+  text-align: center;
+  font-style: italic;
+}
+
+nav {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.nav-btn {
+  padding: 0.5rem 1.25rem;
+  border: 2px solid #e8c44a;
+  border-radius: 6px;
+  color: #e8c44a;
+  font-weight: bold;
+  font-size: 0.95rem;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.nav-btn:hover,
+.nav-btn.activo {
+  background-color: #e8c44a;
+  color: #111;
+  text-decoration: none;
+}
+
+/* =====================
+   MAIN Y SECCIONES
+   ===================== */
+main {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+section {
+  margin-bottom: 3rem;
+}
+
+section h2 {
+  font-size: 1.6rem;
+  color: #e8c44a;
+  margin-bottom: 1.2rem;
+  border-left: 4px solid #e8c44a;
+  padding-left: 0.75rem;
+}
+
+/* =====================
+   HERO (index)
+   ===================== */
+.hero {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.hero-texto {
+  flex: 1;
+  min-width: 250px;
+}
+
+.hero-texto p {
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  color: #ddd;
+}
+
+.hero-imagen {
+  flex: 0 0 300px;
+}
+
+.hero-imagen img {
+  width: 100%;
+  border: 3px solid #e8c44a;
+}
+
+.btn-link {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  background-color: #e8c44a;
+  color: #111;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 0.95rem;
+}
+
+.btn-link:hover {
+  background-color: #f5d76e;
+  text-decoration: none;
+}
+
+/* =====================
+   TARJETAS (datos rápidos)
+   ===================== */
+.tarjetas-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.25rem;
+  text-align: center;
+}
+
+.tarjeta-icono {
+  font-size: 2rem;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.tarjeta h3 {
+  color: #e8c44a;
+  font-size: 1rem;
+  margin-bottom: 0.25rem;
+}
+
+.tarjeta p {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   GALERÍA
+   ===================== */
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border: 2px solid #333;
+}
+
+/* =====================
+   LINKS / ACCESOS
+   ===================== */
+.links-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1rem;
+}
+
+.link-card {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #f0f0f0;
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+.link-card span {
+  font-size: 1.8rem;
+}
+
+.link-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.link-card:hover {
+  border-color: #e8c44a;
+  background-color: #252525;
+  text-decoration: none;
+}
+
+/* =====================
+   EPISODIOS
+   ===================== */
+.seccion-titulo p {
+  color: #bbb;
+  font-size: 1rem;
+  max-width: 650px;
+}
+
+.temporada {
+  margin-bottom: 2.5rem;
+}
+
+.episodios-lista {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.episodio-card {
+  display: flex;
+  gap: 1.25rem;
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  padding: 1rem;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.ep-img {
+  width: 140px;
+  height: 90px;
+  object-fit: cover;
+  border: 2px solid #444;
+  flex-shrink: 0;
+}
+
+.ep-info {
+  flex: 1;
+  min-width: 200px;
+}
+
+.ep-numero {
+  display: inline-block;
+  background-color: #e8c44a;
+  color: #111;
+  font-size: 0.75rem;
+  font-weight: bold;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.4rem;
+}
+
+.ep-info h3 {
+  color: #f0f0f0;
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem;
+}
+
+.ep-info p {
+  color: #bbb;
+  font-size: 0.9rem;
+}
+
+/* =====================
+   PERSONAJES
+   ===================== */
+.personajes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.personaje-card {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.personaje-img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 0;
+  border-bottom: 2px solid #e8c44a;
+}
+
+.personaje-info {
+  padding: 1.25rem;
+}
+
+.personaje-info h3 {
+  font-size: 1.2rem;
+  color: #f0f0f0;
+  margin-bottom: 0.25rem;
+}
+
+.personaje-rol {
+  display: inline-block;
+  background-color: #2a2a2a;
+  color: #e8c44a;
+  font-size: 0.8rem;
+  padding: 2px 10px;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  border: 1px solid #444;
+}
+
+.personaje-info p {
+  color: #bbb;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.personaje-frase {
+  font-style: italic;
+  color: #e8c44a !important;
+  border-left: 3px solid #e8c44a;
+  padding-left: 0.75rem;
+}
+
+.personajes-grid.secundarios {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.personaje-card-mini {
+  background-color: #1f1f1f;
+  border: 1px solid #333;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.personaje-card-mini img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.personaje-card-mini h3 {
+  color: #e8c44a;
+  font-size: 1rem;
+  padding: 0.75rem 1rem 0.25rem;
+}
+
+.personaje-card-mini p {
+  color: #bbb;
+  font-size: 0.85rem;
+  padding: 0 1rem 1rem;
+}
+
+/* =====================
+   CURIOSIDADES
+   ===================== */
+.curiosidades-lista {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.curiosidades-lista li {
+  background-color: #1f1f1f;
+  border-left: 4px solid #e8c44a;
+  padding: 0.75rem 1rem;
+  border-radius: 0 8px 8px 0;
+  color: #ccc;
+  font-size: 0.95rem;
+}
+
+/* =====================
+   FOOTER
+   ===================== */
+footer {
+  background-color: #1a1a1a;
+  border-top: 3px solid #e8c44a;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.footer-nombre {
+  color: #e8c44a;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* =====================
+   RESPONSIVE
+   ===================== */
+@media (max-width: 600px) {
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+
+  .hero {
+    flex-direction: column;
+  }
+
+  .hero-imagen {
+    flex: 0 0 auto;
+    width: 100%;
+  }
+
+  .episodio-card {
+    flex-direction: column;
+  }
+
+  .ep-img {
+    width: 100%;
+    height: 160px;
+  }
+}
